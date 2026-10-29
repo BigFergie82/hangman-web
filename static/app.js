@@ -56,7 +56,7 @@ async function guess(letter) {
 }
 $('new-game').addEventListener('click', start);
 document.addEventListener('keydown', event => {
-  if (event.ctrlKey || event.metaKey || event.altKey || event.target.closest('select,input,textarea,button')) return;
+  if (event.ctrlKey || event.metaKey || event.altKey || event.target.closest('select,input,textarea')) return;
   if (/^[a-zA-Z]$/.test(event.key)) { event.preventDefault(); guess(event.key.toLowerCase()); }
 });
 controls();
