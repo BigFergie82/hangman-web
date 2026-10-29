@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hangman · Letter by letter</title><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body><main>
+<header><a class="brand" href="/">H<span>·</span>M</a><span class="eyebrow">A LITTLE WORDPLAY</span><span class="tag">6 chances. One word.</span></header>
+<section class="intro"><p class="eyebrow">THINK IT. TYPE IT. REVEAL IT.</p><h1>Letter by letter<span>.</span></h1><p>A familiar game, a fresh challenge. Find the hidden word<br class="desktop"> before your six chances run out.</p></section>
+<section class="game"><div class="illustration"><div class="drawing-top"><span class="eyebrow">THE HANGMAN</span><span id="lives">6 / 6 chances</span></div>
+<svg viewBox="0 0 300 290" role="img" aria-label="Hangman drawing"><g class="frame"><path d="M45 265H250 M80 265V35H205V65 M80 70L115 35"/></g><g id="figure"><circle cx="205" cy="88" r="23"/><path d="M205 111V181"/><path d="M205 130L165 158"/><path d="M205 130L245 158"/><path d="M205 181L170 225"/><path d="M205 181L240 225"/></g></svg>
+<p class="hint">A wrong guess adds a line.<br>Make every letter count.</p></div>
+<div class="play"><div class="settings"><label for="difficulty">Difficulty</label><select id="difficulty"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select><button id="new-game">New game <span>↗</span></button></div>
+<div id="status" role="status" aria-live="polite">Start a game to find your word.</div><div id="pattern" aria-label="Hidden word"></div><p id="word-length" class="eyebrow"></p><div id="keyboard" aria-label="Letter guesses"></div><div class="guesses"><span class="eyebrow">YOUR GUESSES</span><span id="guessed">None yet</span></div><p id="error" role="alert"></p><p class="keyboard-tip">Click a letter or use your keyboard.</p></div></section>
+<footer><span>THE CLASSICS NEVER GET OLD.</span><span>Built with Python + Flask · Malcolm Ferguson</span></footer>
+</main></body></html>
