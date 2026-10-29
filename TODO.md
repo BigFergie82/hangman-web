@@ -4,9 +4,9 @@ The original Specification.md is retained unchanged. ASSIGNMENT.md takes
 precedence where it narrows the original system.
 
 ## Phase 1 - Engine and word management
-- [ ] Implement independent game state, validation, win/loss and safe serialization.
-- [ ] Add three curated word lists and a validated random word loader.
-- [ ] Test core rules, answer secrecy and word loading.
+- [x] Implement independent game state, validation, win/loss and safe serialization.
+- [x] Add three curated word lists and a validated random word loader.
+- [x] Test core rules, answer secrecy and word loading (11 tests).
 
 ## Phase 2 - Flask REST API
 - [ ] Create unique games and implement the three required JSON endpoints.
