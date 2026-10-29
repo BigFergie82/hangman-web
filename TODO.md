@@ -17,7 +17,8 @@ precedence where it narrows the original system.
 - [x] Add responsive HTML/CSS, SVG drawing and alphabet buttons.
 - [x] Use fetch for server-authoritative gameplay; support physical keyboard.
 - [x] Show guesses, lives, results, errors and new-game flow.
-- [ ] Verify browser interaction and layout.
+- [x] Verify live browser start, letter clicks, chance updates, completed loss and disabled controls.
+- [ ] Student final check: physical keyboard, mobile layout and DevTools inspection.
 
 ## Phase 4 - Testing and documentation
 - [x] Run 16 automated engine/API tests; browser start/guess checks passed.
@@ -26,7 +27,7 @@ precedence where it narrows the original system.
 
 ## Phase 5 - Public deployment and submission
 - [x] Publish source to https://github.com/BigFergie82/hangman-web.
-- [ ] Deploy Flask to Render and verify a complete game at its public HTTPS URL.
+- [x] Deploy to https://malcolm-hangman-web.onrender.com and verify a complete browser game.
 - [x] Update report with the verified public URLs.
 - [ ] Record the required 2-3 minute demonstration, including DevTools JSON.
 - [ ] Submit repository URL, public app URL, PDF and recording on HuskyCT.

@@ -3,6 +3,10 @@
 A Python/Flask Hangman application for CSE 4095. The browser only displays
 server state; it never receives the answer until the game ends.
 
+Live app: https://malcolm-hangman-web.onrender.com
+
+Repository: https://github.com/BigFergie82/hangman-web
+
 ## Run locally
 
 Requires Python 3.11 or newer.
@@ -61,6 +65,10 @@ the **Free** plan and these commands:
 - Start: `gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 4 server:app`
 - Optional HTTP health path: `/health`.
 - Python version: `3.13.7` (environment variable `PYTHON_VERSION`).
+
+This deployment was created using a public Git repository URL. If pushing a
+commit does not produce a new deployment, use Manual Deploy > Deploy latest
+commit in Render. Confirm the live deployment's commit before grading.
 
 Use exactly one worker: game state is held in memory. A lock protects
 updates across threads. A restart, redeploy or free-service spin-down
